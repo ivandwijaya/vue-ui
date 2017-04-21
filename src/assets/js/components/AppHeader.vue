@@ -2,7 +2,7 @@
 	<nav class="nav has-shadow">
 		<div class="nav-left">
 			<a class="nav-item">
-				<img src="http://bulma.io/images/bulma-logo.png" alt="Bulma logo">
+				<img src="/dist/logo.png" alt="Main Logo">
 			</a>
 		</div>
 

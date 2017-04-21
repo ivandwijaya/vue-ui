@@ -6,7 +6,8 @@ module.exports = {
     entry: {
         app: [
             './src/main.js',
-            './src/main.scss'
+            './src/main.scss',
+            './src/assets/logo.png'
         ]
     },
     output: {
@@ -45,11 +46,7 @@ module.exports = {
         ]
     },
     plugins: [
-        new ExtractTextPlugin('[name].css'),
-
-        new webpack.LoaderOptionsPlugin({
-            minimize: true
-        })
+        new ExtractTextPlugin('[name].css')
     ],
     resolve: {
         alias: {
@@ -64,7 +61,7 @@ module.exports = {
         hints: false
     },
     devtool: '#eval-source-map'
-}
+};
 
 if (process.env.NODE_ENV === 'production') {
     module.exports.devtool = '#source-map';
